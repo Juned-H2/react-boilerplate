@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, Component} from 'react';
 import { ethers } from 'ethers';
 
 const provider = new ethers.providers.JsonRpcProvider('https://empty-spring-paper.bsc.quiknode.pro/510961435d45eb06199e2210cdec1efb9a3d8623/');
@@ -6,7 +6,7 @@ const ABI = ['function getAmountsOut(uint amountIn, address[] calldata path) ext
 const pancakeRouterAddress = '0x10ED43C718714eb63d5aA57B78B54704E256024E';
 const pancakeRouter = new ethers.Contract(pancakeRouterAddress, ABI, provider);
 
-class Home extends React.Component {
+class Home extends Component {
     state = {
         test: 1
     }
