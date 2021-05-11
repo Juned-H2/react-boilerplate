@@ -25,7 +25,7 @@ class Home extends React.Component {
         <button>Paste + Ping</button>
         </form>
         <p>Ping'd 33 seconds ago</p>
-        </div>
+        </div>s
      );
   }
 }
