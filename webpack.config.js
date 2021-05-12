@@ -20,7 +20,7 @@ module.exports = {
         }]
     },
     plugins: [new HtmlWebpackPlugin ({
-        title: 'Livecoin PRO',
+        title: '',
         favicon: './assets/favicon.ico',
         template: path.join(__dirname, './src', 'index.html')
     })],
